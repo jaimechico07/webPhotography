@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-galery .swiper-slide {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+}
+
+.swiper-button-disabled.rounded-arrow {
+  display: none !important;
+}
+
+.animation-bullet {
+  width: auto !important;
+}
+
+.animation-bullet span {
+  cursor: pointer;
+}
+
+.animation-bullet span:not(.swiper-pagination-bullet-active) {
+  width: 4px;
+  height: 4px;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
